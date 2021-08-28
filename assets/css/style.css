@@ -107,10 +107,93 @@ li {
   Header styling starts here
 =================================*/
 
+header .wrapper {
+  max-width: 1518px;
+  width: 98%;
+  padding: 11px 0;
+  display: flex;
+  justify-content: space-between;
+}
 
+header h1 {
+  display: inline-block;
+  vertical-align: top;
+}
 
+.header-left { flex-basis: 50%; }
+.menu { display: inline-block; }
 
+.menu li { 
+  padding: 5px 10px;
+  font-size: 12px; 
+}
 
+.menu li:first-child { padding-left: 20px; }
+
+.menu li a {
+  padding: 5px 0;
+  color: #818181;    
+  font-weight: bold;
+  text-transform: capitalize; 
+  transition: 1s; 
+}
+
+.menu .bar { text-indent: -9999px; }
+.hamburger { display: none; }
+
+.sub-menu {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.sub-menu::after {
+  content: "\f107";
+  color: #7C7E80;
+  font-family: "FontAwesome";
+  font-weight: bold;
+}
+
+.sub-menu .sub-active::after {
+  content: "\f106";
+  color: #fff;
+  font-family: "FontAwesome";
+  font-weight: bold;
+}
+
+.sub-menu ul {
+  min-width: 160px;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background-color: #f9f9f9;
+}
+
+.sub-menu ul li {
+  margin-left: 0; 
+  display: block; 
+}
+
+.sub-menu ul li a {
+  color: #7C7E80;
+  padding: 12px 14px;
+  text-decoration: none;
+  display: block;
+}
+
+.header-right {
+  border: 1px solid #4D7034;
+  border-radius: 6%;
+  flex-basis: 6%;
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;    
+}
+
+.header-right a {
+  padding: 8px 22px;
+  transition: 1s;
+}
 
 /*=================================
   Header styling ends here
@@ -151,4 +234,29 @@ li {
 
 
 
-}  
+} 
+
+@media only screen and (min-width: 996px) {
+
+  .sub-menu ul li a:hover { background-color: #f1f1f1;}
+  .sub-menu:hover ul { display: block;}
+
+  .sub-menu:hover::after {
+    content: "\f106";
+    color: #7C7E80;
+    font-family: "FontAwesome";
+    font-weight: bold;
+    transition: 1s;
+  }
+
+  .menu li a:hover { color: #420031; }
+
+  .header-right a:hover { 
+    background-color: #420031;
+    color: #FFFFFF;
+  }
+
+
+} 
+
+
