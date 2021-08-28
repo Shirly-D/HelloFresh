@@ -110,7 +110,7 @@ li {
 header .wrapper {
   max-width: 1518px;
   width: 98%;
-  padding: 11px 0;
+  padding: 9px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -203,6 +203,60 @@ header h1 {
   main styling starts here
 =================================*/
 
+.banner { position: relative; }
+
+.banner .wrapper {
+  max-width: 1518px;
+  width: 100%;
+}
+
+.banner-text {
+  position: absolute;
+  top: 185px;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.banner-text h2 {
+  width: 65%;
+  margin: 0 auto 12px;
+  font-family: sans-serif;
+  font-size: 45px;
+  text-transform: capitalize;  
+}
+
+.banner-text p {
+  width: 48%;
+  margin: 0 auto 20px;
+  line-height: 25px;
+}
+
+.banner-text p::first-letter { text-transform: capitalize; }
+
+.banner-text div {
+  width: 35%;
+  margin: 0 auto;
+}
+
+.banner-text div a {
+  padding: 10px 20px;
+  border: #476B2D;
+  border-radius: 6%;
+  background-color: #476B2D;
+  color: #FFFFFF;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;  
+  transition: 1s;
+}
+
+.banner .wrapper div:nth-child(2) {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+}
+
 
 
 
@@ -238,6 +292,8 @@ header h1 {
 
 @media only screen and (min-width: 996px) {
 
+  /* header start */
+
   .sub-menu ul li a:hover { background-color: #f1f1f1;}
   .sub-menu:hover ul { display: block;}
 
@@ -255,6 +311,17 @@ header h1 {
     background-color: #420031;
     color: #FFFFFF;
   }
+
+  /* header end */
+
+  /* main start */
+
+  .banner-text div:hover a {
+    background-color: #420031;
+    color: #FFFFFF;
+  }
+
+  /* main end */
 
 
 } 
