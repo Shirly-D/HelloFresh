@@ -212,7 +212,7 @@ header h1 {
 
 .banner-text {
   position: absolute;
-  top: 185px;
+  top: 180px;
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
@@ -220,7 +220,7 @@ header h1 {
 
 .banner-text h2 {
   width: 65%;
-  margin: 0 auto 12px;
+  margin: 0 auto 2px;
   font-family: sans-serif;
   font-size: 45px;
   text-transform: capitalize;  
@@ -228,11 +228,13 @@ header h1 {
 
 .banner-text p {
   width: 48%;
-  margin: 0 auto 20px;
-  line-height: 25px;
+  margin: 0 auto 12px;
+  font-size: 15px;
+  line-height: 21px;
 }
 
 .banner-text p::first-letter { text-transform: capitalize; }
+.banner-text p span { font-weight: bold; }
 
 .banner-text div {
   width: 35%;
@@ -240,7 +242,7 @@ header h1 {
 }
 
 .banner-text div a {
-  padding: 10px 20px;
+  padding: 13px 20px;
   border: #476B2D;
   border-radius: 6%;
   background-color: #476B2D;
@@ -251,12 +253,27 @@ header h1 {
   transition: 1s;
 }
 
-.banner .wrapper div:nth-child(2) {
+.banner .scroll-down {
   position: absolute;
   bottom: 30px;
   left: 50%;
 }
 
+.scroll-down a { text-indent: -9999px; }
+
+.scroll-down a::before {
+  content: "\f107";
+  padding: 9px 13px;
+  border: 1px solid #000000;
+  border-radius: 47%;
+  background-color: #FFFFFF;
+  color: #000000;
+  float: right;
+  font-size: 20px;
+  font-family: "FontAwesome";
+  text-indent: 0;
+  transition: 1s;
+}
 
 
 
@@ -319,6 +336,11 @@ header h1 {
   .banner-text div:hover a {
     background-color: #420031;
     color: #FFFFFF;
+  }
+
+  .scroll-down a:hover::before { 
+    background-color: #8b7a87; 
+    color: #420031;
   }
 
   /* main end */
