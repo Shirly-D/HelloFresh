@@ -228,8 +228,9 @@ header h1 {
 
 .banner-text p {
   width: 48%;
-  margin: 0 auto 12px;
+  margin: 0 auto 17px;
   font-size: 15px;
+  letter-spacing: .5px;
   line-height: 21px;
 }
 
@@ -255,8 +256,8 @@ header h1 {
 
 .banner .scroll-down {
   position: absolute;
-  bottom: 30px;
-  left: 50%;
+  bottom: 18px;
+  left: 49%;
 }
 
 .scroll-down a { text-indent: -9999px; }
@@ -274,6 +275,45 @@ header h1 {
   text-indent: 0;
   transition: 1s;
 }
+
+.helloFresh .wrapper { width: 61%; }
+
+.helloFresh h2 {
+  padding: 28px 0;
+  color: #423833;
+  font-size: 28px;
+  text-align: center;
+  text-transform: capitalize;    
+}
+
+.helloFresh ul { 
+  display: flex; 
+  justify-content: space-between;
+}
+
+.helloFresh ul li { flex-basis: 23%; }
+
+.helloFresh li figure {
+  width: 35%;
+  margin: 0 auto 10px;
+}
+
+.helloFresh li div { text-align: center; }
+.helloFresh li div h5::first-letter { text-transform: capitalize; }
+
+.helloFresh li div h5 {
+  margin-bottom: 4px;
+  color: #4D3E4B;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.helloFresh li div p { 
+  color: #384258;
+  font-size: 13px; 
+}
+
+.helloFresh li div p::first-letter { text-transform: capitalize; }
 
 
 
