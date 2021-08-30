@@ -422,9 +422,31 @@ header h1 {
   position: relative; 
 }
 
+.slider-images { position: relative; }
+
+.slide-arrow .prev-arrow .slick-arrow {
+  width: 3%;
+  height: 34px;
+  border-radius: 50%;
+  position: absolute;  
+  left: -44px;
+  top: 163px;
+  z-index: 2;
+}
+
+.slide-arrow .next-arrow .slick-arrow {
+  width: 3%;
+  height: 34px;
+  border-radius: 50%;
+  position: absolute;
+  top: 163px;
+  right: -44px;  
+  z-index: 2;
+}
+
 .slider .slick-dots {
-  width: 10%;
-  bottom: 60px;
+  width: 14%;
+  top: 425px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
