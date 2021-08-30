@@ -418,8 +418,29 @@ header h1 {
 .slide:first-child { margin-left: 0; }
 
 .slide { 
-  margin-left: 2%;
+  margin-left: 3%;
   position: relative; 
+}
+
+.slider .slick-dots {
+  width: 10%;
+  bottom: 60px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+  
+.slider .slick-dots li.slick-active button:before,
+.slider li.slick-active button:before {
+  opacity: .7;
+  color: #4A6F35
+}
+  
+.slider .slick-dots li button:before {
+  margin: 30px 5%;
+  font-size: 60px;
+  color: #FFFFFF;
 }
 
 .slide h5 {
