@@ -626,6 +626,25 @@ section .active-lightbox { display: block; }
   footer styling starts here
 =================================*/ 
 
+.footer-top { padding: 20px 0; }
+
+.footer-top .wrapper,
+.footer-bottom .wrapper {
+  width: 63%;
+  display: flex;
+}
+
+.footer-links { margin-left: 15%; }
+.footer-links:first-child { margin-left: 0; }
+.footer-links li { display: block; }
+
+.footer-links li h5 {
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
 
 
 
