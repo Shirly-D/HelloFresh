@@ -600,6 +600,11 @@ section .active-lightbox { display: block; }
   height: 30px;
 }
 
+.subscribe form div:first-child input::placeholder {
+  color: #7C7E80;
+  font-size: 14px;
+}
+
 .subscribe form div:nth-child(2) {
   margin-left: -1px;
   display: inline-block;
@@ -632,10 +637,11 @@ section .active-lightbox { display: block; }
 .footer-bottom .wrapper {
   width: 63%;
   display: flex;
+  justify-content: space-between;
 }
 
-.footer-links { margin-left: 15%; }
-.footer-links:first-child { margin-left: 0; }
+.footer-top ul { flex-basis: 60%; }
+.footer-top ul li { margin-left: 8%; }
 .footer-links li { display: block; }
 
 .footer-links li h5 {
@@ -643,6 +649,14 @@ section .active-lightbox { display: block; }
   font-weight: bold;
   text-transform: uppercase;
 }
+
+.footer-links li a {
+  color: #82828B;
+  text-transform: capitalize;
+}
+
+.footer-links li { margin-left: 0; }
+
 
 
 
