@@ -556,6 +556,8 @@ section .close {
   font-size: 50px;
 }
 
+section .active { display: block; }
+
 section .light-box {
   width: 30%;
   height: auto;
