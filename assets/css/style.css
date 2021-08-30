@@ -523,6 +523,100 @@ section .light-box {
 }
 
 section .active-lightbox { display: block; }
+.flexible-plan { position: relative; }
+
+.flexible-plan .wrapper {
+  max-width: 1518px;
+  width: 100%;
+}
+
+.flexible-text {
+  position: absolute;
+  top: 127px;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.flexible-text h2 {
+  margin-bottom: 7px;
+  font-size: 38px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.flexible-text p {
+  width: 66%;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  line-height: 25px;  
+}
+
+.flexible-text div a {
+  padding: 14px 18px;
+  border-radius: 7%;
+  background-color: #476B2D;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;  
+  transition: 1s;
+}
+
+.subscribe {
+  padding: 20px 0;
+  background-color: #F8F8F8;
+  text-align: center;
+}
+
+.subscribe-text h4 {
+  margin-bottom: 10px;
+  color: #504346;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.subscribe-text p {
+  margin-bottom: 14px;
+  font-size: 12px;
+}
+
+.subscribe-text h4::first-letter,
+.subscribe-text p::first-letter { text-transform: capitalize; }
+
+.subscribe form {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe form div:first-child {
+  width: 22%;
+  display: inline-block
+}
+
+.subscribe form div:first-child input {
+  width: 97%;
+  height: 30px;
+}
+
+.subscribe form div:nth-child(2) {
+  margin-left: -1px;
+  display: inline-block;
+}
+
+.subscribe form div:nth-child(2) a {
+  height: 20px;
+  padding: 7px 13px;
+  border: 1px solid #9FB193;
+  background-color: #9FB193;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: 1s;
+}  
+
 
 /*=================================
   main styling ends here
@@ -592,7 +686,8 @@ section .active-lightbox { display: block; }
   }
 
   .box-list div:hover a,
-  .slider-section .wrapper div:nth-child(3) a {
+  .slider-section .wrapper div:nth-child(3):hover a,
+  .flexible-text div a:hover {
     background-color: #818181;
     color: #FFFFFF;
   }
@@ -606,6 +701,10 @@ section .active-lightbox { display: block; }
     color: #CCCCCC;
     cursor: pointer;
   }
+
+  .subscribe form div:nth-child(2) a:hover { background-color: #63814E; }
+
+  
 
   
 
